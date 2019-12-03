@@ -1,0 +1,14 @@
+
+.jumbotron{
+    height: 180px;
+    
+}
+
+#text{
+    font-size: 18px;
+}
+
+#search{
+    width: 200px;
+    margin-top: 15px;
+}
