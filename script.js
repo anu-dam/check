@@ -1,26 +1,41 @@
 
+var city;
+var response;
 
-$("#searchBtn").on("click", function(){
+function callApi(city) {
 
-var search = $("#select-city").val();
-    
-var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + search + "&appid=b6907d289e10d714a6e88b30761fae22";
-    
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=75eb6e5eb20db39b88a78417b81c45f6";
 
-    
     $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then(function(response) {
-    
-      // Printing the entire object to console
-      console.log(response);
-    
-    
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
+
+        $("#city").text("Weather Forcast in " + response.name);
+        $("#temp").text("Temprature " + response.main.temp + "F");
+        $("#humid").text("Humidity " + response.main.humidity);
+        $("#wind").text("Wind Speed " + response.wind.speed);
+        $("#uv").text("UV Index " + response.wind.speed);
+
+
+        console.log(response);
+
+        var icon = response.weather[0].icon;
+
+        var img = '<img src="https://openweathermap.org/img/wn/' + icon + '.png">';
+
+        $('#icon').empty();
+        $('#icon').append(img);
+
+        
     });
-    
-    
-    
-    
-    
-    });
+}
+
+
+$("#searchBtn").on("click", function () {
+
+    var city = $("#select-city").val();
+
+    callApi(city);
+
+});
