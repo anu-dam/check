@@ -1,3 +1,7 @@
+/* body {
+    background-image: url("paper.gif");
+  } */
+
 .jumbotron {
   height: 180px;
 }
@@ -16,7 +20,8 @@
 #select-city{
     display: block;
     margin-top: 10px;
-    padding: 0 12px;
+    padding: 4px;
+    font-size: 16px;
 }
 
 #searchBtn{
@@ -24,6 +29,7 @@
     margin-top: 10px;
     padding: 3px 18px;
     margin-bottom: 15px;
+    border: 1px solid green;
 }
 
 #searchBtn:hover{
@@ -33,10 +39,10 @@
 .btn-group button {
     
     margin-top: 10px;
-    
+    border: 1px solid green;
     font-size: 16px;
     padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
+    cursor: pointer;
     width: 100%; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
   }
