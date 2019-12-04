@@ -4,9 +4,46 @@
 
 #text {
   font-size: 18px;
+  display: inline;
 }
 
 #search {
   width: 200px;
   margin-top: 15px;
+  
 }
+
+#select-city{
+    display: block;
+    margin-top: 10px;
+    padding: 0 12px;
+}
+
+#searchBtn{
+    display: block;
+    margin-top: 10px;
+    padding: 3px 18px;
+    margin-bottom: 15px;
+}
+
+#searchBtn:hover{
+    background-color: darkgray;
+}
+
+.btn-group button {
+    
+    margin-top: 10px;
+    
+    font-size: 16px;
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+ 
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: darkgray;
+  }

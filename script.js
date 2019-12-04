@@ -15,7 +15,8 @@ function callApi(city) {
         $("#temp").text("Temprature " + response.main.temp + "F");
         $("#humid").text("Humidity " + response.main.humidity);
         $("#wind").text("Wind Speed " + response.wind.speed);
-        $("#uv").text("UV Index " + response.wind.speed);
+        $("#pr").text("Pressure " + response.main.pressure);
+        $("#cond").text("Condition " + response.weather[0].description);
 
 
         console.log(response);
@@ -37,5 +38,13 @@ $("#searchBtn").on("click", function () {
     var city = $("#select-city").val();
 
     callApi(city);
+
+});
+
+$(".selection").on("click", function(){
+
+var city = event.target.id;
+callApi(city);
+
 
 });
