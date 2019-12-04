@@ -31,7 +31,7 @@ $("#searchBtn").on("click", function () {
 
     var city = $("#select-city").val();
 
-    callApi(city);
+    callApi(city);  
 
 });
 
@@ -50,9 +50,9 @@ var previousURL = "http://api.openweathermap.org/data/2.5/forecast?" + City + "&
 $.ajax({
     url: previousURL,
     method: "GET"
-}).then(function (response) {
+}).then(function (responseI) {
 
-    console.log(response);
+    console.log(responseI);
 
 });
 }
