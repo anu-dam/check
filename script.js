@@ -19,7 +19,7 @@ function callApi(city) {
 
         var icon = response.weather[0].icon;
 
-        var img = '<img src="https://openweathermap.org/img/wn/' + icon + '.png">';
+        var img = '<img src="https://openweathermap.org/img/w/' + icon + '.png">';
 
         $('#icon').empty();
         $('#icon').append(img);
@@ -31,7 +31,8 @@ $("#searchBtn").on("click", function () {
 
     var city = $("#select-city").val();
 
-    callApi(city);  
+    callApi(city); 
+    previous(city);
 
 });
 
@@ -45,7 +46,7 @@ callApi(city);
 
 function previous(prCity){ 
 
-var previousURL = "http://api.openweathermap.org/data/2.5/forecast?" + City + "&units=metric&appid=75eb6e5eb20db39b88a78417b81c45f6";
+var previousURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + prCity + "&units=metric&appid=75eb6e5eb20db39b88a78417b81c45f6";
 
 $.ajax({
     url: previousURL,
