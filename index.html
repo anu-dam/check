@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 </head>
 
@@ -46,7 +47,10 @@
             <div class="col-lg-8">
 
                 <div>
-                <h1 id="city">Weather Forcast in</h3><br>
+                <h1 id="city">Current Weather in</h1>
+                <h3 id="date"> </h3>
+                  
+                  <br>
                     <h2 id="icon"></h2>
                 </div>
                     <h4 id="temp">Temprature</h4><br>
@@ -56,7 +60,60 @@
                     <h4 id="pr">Pressure</h4><br>
             </div>
           </div>
+        
+
+        <div class="row">
+          
+          <div class="col-md-2">
+            <figure>
+              <h4 id="dateOne"></h4>
+              <br>
+              <h4 id="temp1"></h4>
+              <h4 id="humid1"></h4>
+            </figure>
+            <h2 id="icon1"></h2>
+
+            
+          </div>
+          <div class="col-md-2">
+            <figure>
+              <h4 id="dateTwo"></h4>
+              <br>
+              <h4 id="temp2"></h4>
+              <h4 id="humid2"></h4>
+
+            </figure>
+
+          </div>
+          <div class="col-md-2">
+            <figure>
+              <h4 id="dateThree"></h4>
+            </figure>
+
+
+          </div>
+          <div class="col-md-2">
+          <figure>
+            <h4 id="dateFour"></h4>
+          </figure>
+
         </div>
+
+        <div class="col-md-2">
+          <figure>
+            <h4 id="dateFive"></h4>
+          </figure>
+    
+        </div>
+
+      </div>
+     
+          
+
+        </div>
+
+        
+      </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="script.js"></script>

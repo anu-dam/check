@@ -61,6 +61,15 @@
     background-color: rgba(0,0,0,.03);
   }
 
+  .col-md-2{
+
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    
+
+  }
+
   /* .col-lg-4{
 
     border: 1px solid rgba(0,0,0,.125);
