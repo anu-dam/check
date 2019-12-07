@@ -75,6 +75,7 @@ $.ajax({
             myArr.push(response.list[i]);
 
             myDate   = myArr[0].dt_txt.split(" ");
+            
 
             // console.log (myArr[1]);
             
@@ -89,33 +90,36 @@ $.ajax({
             $('#icon1').append(img1);
             
             
-            // myDate2 = myArr[2].dt_txt.split(" ");
+            
            
             
             $("#dateOne").text(myDate[0]);
-            // $("#dateTwo").text(myDate1[0]);
+            
             $("#temp1").text("Temp : " + myArr[0].main.temp + "C");
             $("#humid1").text("Humid : " + myArr[0].main.humidity);
 
 
-            // $("#temp2").text("Temprature :" + myArr[1].main.temp);
-            // $("#humid2").text("Humidity :" + myArr[1].main.humidity);
-
-
-            
             
         }
 
-        
-
-
-        
-        
     }
 
-    console.log(myArr[1].dt_txt);
-    console.log(myArr[2].dt_txt);
+    
+    $("#dateTwo").text(myDate[0]);
+    $("#temp2").text("Temp :" + myArr[1].main.temp);
+    $("#humid2").text("Humid :" + myArr[1].main.humidity);
+            
+    $("#dateThree").text(myDate[0]);
+    $("#temp3").text("Temp :" + myArr[2].main.temp);
+    $("#humid3").text("Humid :" + myArr[2].main.humidity);
 
+    $("#dateFour").text(myDate[0]);
+    $("#temp4").text("Temp :" + myArr[3].main.temp);
+    $("#humid4").text("Humid :" + myArr[3].main.humidity);
+
+    $("#dateFive").text(myDate[0]);
+    $("#temp5").text("Temp :" + myArr[4].main.temp);
+    $("#humid5").text("Humid :" + myArr[4].main.humidity);
    
 
 });
